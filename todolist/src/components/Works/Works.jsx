@@ -19,7 +19,7 @@ class Works extends Component {
   }
 
   resetList = () => {
-    return this.setState({workList: data})
+    this.setState({workList: data})
   }
 
   paintWorks = () =>{
@@ -49,7 +49,7 @@ class Works extends Component {
               <label htmlFor="title">Tarea:</label><br/>
               <input type="text" id="title" name="title"/><br/>
               <label htmlFor="day">Día:</label><br/>
-              <input type="text" id="day" name="day"/>
+              <input type="date" id="day" name="day"/>
               <input type="submit"/>
             </form>
             {this.paintWorks()}
